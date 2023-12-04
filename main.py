@@ -80,7 +80,13 @@ btn_brackets.grid(row=6, column=1)
 btn_dot = tk.Button(root, text=".", command=lambda: add_to_calculation("."), width=5, font=("sans-serif", 14) )
 btn_dot.grid(row=6, column=2)
 
+btn_sum = tk.Button(root, text="=", command=lambda: add_to_calculation("="), width=5, font=("sans-serif", 14) )
+btn_sum.grid(row=6, column=1)
+
 btn_brackets = tk.Button(root, text="()", command=lambda: add_to_calculation("()"), width=5, font=("sans-serif", 14) )
-btn_brackets.grid(row=6, column=1)
+btn_brackets.grid(row=6, column=3)
+
+btn_backspace = tk.Button(root, text="<", command=lambda: add_to_calculation("<"), width=5, font=("sans-serif", 14) )
+btn_backspace.grid(row=6, column=4)
 
 root.mainloop()
