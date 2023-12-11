@@ -78,10 +78,10 @@ btn_clear.grid(row=5, column=4)
 btn_percent = tk.Button(root, text="%", command=lambda: add_to_calculation("%"), width=5, font=("sans-serif", 14))
 btn_percent.grid(row=5, column=3)
 
-btn_open = tk.Button(root, text="(", command=lambda: add_to_calculation(open), width=5, font=("sans-serif", 14))
+btn_open = tk.Button(root, text="(", command=lambda: add_to_calculation("("), width=5, font=("sans-serif", 14))
 btn_open.grid(row=6, column=1)
 
-btn_close = tk.Button(root, text=")", command=lambda: add_to_calculation(close), width=5, font=("sans-serif", 14))
+btn_close = tk.Button(root, text=")", command=lambda: add_to_calculation(")"), width=5, font=("sans-serif", 14))
 btn_close.grid(row=6, column=2)
 
 btn_equals = tk.Button(root, text="=", command= evaluate_calculation, width=11, font=("sans-serif", 14))
